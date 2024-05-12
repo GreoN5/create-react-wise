@@ -78,7 +78,3 @@ program
   .action(execute);
 
 program.parse(process.argv);
-
-// const options = program.options;
-//
-// const execute = () => {};
