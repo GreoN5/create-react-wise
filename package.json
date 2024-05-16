@@ -1,25 +1,53 @@
 {
   "name": "create-react-wise",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "create-react-wise helps you generate easily your desired foundation for react application",
+  "author": "Georgi Dimitrov",
+  "license": "MIT",
+  "main": "dist/index.js",
   "engines": {
     "node": ">=16"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:rollup": "rollup -c"
   },
-  "keywords": ["react", "tailwindcss", "vite", "material-ui", "mui"],
-  "license": "MIT",
-  "author": "Georgi Dimitrov",
+  "keywords": [
+    "react",
+    "tailwindcss",
+    "vite",
+    "material-ui",
+    "mui"
+  ],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreoN5/create-react-wise.git"
+  },
   "bin": {
     "create-react-wise": "index.js"
+  },
+  "homepage": "https://github.com/GreoN5/create-react-wise",
+  "bugs": {
+    "url": "https://github.com/GreoN5/create-react-wise/issues"
   },
   "dependencies": {
     "chalk": "^5.3.0",
     "commander": "^12.0.0"
   },
   "devDependencies": {
-    "prettier": "^3.2.5"
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "prettier": "^3.2.5",
+    "rollup": "^4.17.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4"
+  },
+  "publishConfig": {
+    "name": "create-react-wise",
+    "registry": "https://registry.npmjs.org"
   }
 }
